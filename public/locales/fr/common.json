@@ -1,0 +1,168 @@
+{
+  "welcome": "[FR] Welcome to our application",
+  "home": "[FR] Home",
+  "settings": "[FR] Settings",
+  "sidebar": {
+    "home": {
+      "label": "[FR] Home",
+      "home": "[FR] Home"
+    },
+    "dashboards": {
+      "label": "[FR] Dashboards",
+      "dashboard": "[FR] Dashboard",
+      "overall": "[FR] Overall",
+      "clients": "[FR] Clients",
+      "management": "[FR] Management",
+      "operational_performance": "[FR] Operational Performance",
+      "sales": "[FR] Sales"
+    },
+    "orders": {
+      "label": "[FR] Orders",
+      "dispatcher": "[FR] Dispatcher",
+      "dispatcher_live": "[FR] Dispatcher Live",
+      "scheduled_orders": "[FR] Scheduled Orders",
+      "live_stream_map": "[FR] Live Stream Map",
+      "live_stream_map_beta": "[FR] Live Stream Map (Beta)",
+      "consolidated_orders": "[FR] Consolidated Orders"
+    },
+    "complaints": {
+      "label": "[FR] Complaints",
+      "tickets": "[FR] Tickets",
+      "pending_orders": "[FR] Pending Orders",
+      "ticket_report": "[FR] Ticket Report"
+    },
+    "captain_reports": {
+      "label": "[FR] Captain Reports",
+      "delivery_report": "[FR] Delivery Report",
+      "commission_report": "[FR] Commission Report",
+      "commission_payments": "[FR] Commission Payments",
+      "kpi_report": "[FR] KPI Report",
+      "consolidated_commission_report": "[FR] Consolidated Commission Report",
+      "active_low_performance_report": "[FR] Active Low Performance Report",
+      "shift_report": "[FR] Shift Report"
+    },
+    "client_reports": {
+      "label": "[FR] Client Reports",
+      "sales_report": "[FR] Sales Report",
+      "cancellation_report": "[FR] Cancellation Report",
+      "client_sales_report": "[FR] Client Sales Report",
+      "client_order": "[FR] Client Order",
+      "client_transactions": "[FR] Client Transactions"
+    },
+    "3pl_reports": {
+      "label": "[FR] 3pl Reports",
+      "com_report": "[FR] COM Report",
+      "captain_com_report": "[FR] Captain Com Report"
+    },
+    "kpi_reports": {
+      "label": "[FR] KPI Reports",
+      "captain_performance": "[FR] Captain Performance",
+      "captain_working_days": "[FR] Captain Working Days",
+      "order_timeline": "[FR] Order TimeLine",
+      "high_level": "[FR] High Level",
+      "driver_level": "[FR] Driver Level",
+      "vendor_level": "[FR] Vendor Level",
+      "geographical_level": "[FR] Geographical Level",
+      "region_based": "[FR] Region Based",
+      "area_based": "[FR] Area Based",
+      "zone_based": "[FR] Zone Based",
+      "zone_detailed": "[FR] Zone Detailed"
+    },
+    "reports": {
+      "label": "[FR] Reports",
+      "expense_report": "[FR] Expense Report",
+      "captain_transactions": "[FR] Captain Transactions"
+    },
+    "vehicle": {
+      "label": "[FR] Vehicle",
+      "all_vehicle": "[FR] All Vehicle",
+      "rented_vehicles": "[FR] Rented Vehicles"
+    },
+    "employees": {
+      "label": "[FR] Employees",
+      "captains": "[FR] Captains",
+      "employees": "[FR] Employees",
+      "reg_requests": "[FR] Reg Requests",
+      "operations": "[FR] Operations"
+    },
+    "operation_reports": {
+      "label": "[FR] Operation Reports",
+      "daily_shift_reports": "[FR] Daily Shift Reports",
+      "timesheet_reports": "[FR] TimeSheet Reports"
+    },
+    "crm": {
+      "label": "[FR] CRM",
+      "notifications": "[FR] Notifications"
+    },
+    "sales_management": {
+      "label": "[FR] Sales Management",
+      "roles": "[FR] Roles",
+      "team_management": "[FR] Team Management",
+      "sales_leads": "[FR] Sales Leads",
+      "clients": "[FR] Clients"
+    },
+    "map_views": {
+      "label": "[FR] Map Views",
+      "store_view": "[FR] Store View",
+      "order_view": "[FR] Order View",
+      "store_order_view": "[FR] Store Order View"
+    },
+    "delivery_rules": {
+      "label": "[FR] Delivery Rules",
+      "price_rule_master": "[FR] Price Rule Master",
+      "cancellation_charge": "[FR] Cancellation Charge",
+      "return_to_client_charge": "[FR] Return To Client Charge"
+    },
+    "system_settings": {
+      "label": "[FR] System Settings",
+      "shift_rules": "[FR] Shift Rules",
+      "dispatch_rules": "[FR] Dispatch Rules",
+      "commission_rules": "[FR] Commission Rules",
+      "role_and_permission": "[FR] Role and Permission",
+      "vat_master": "[FR] Vat Master",
+      "industry_types": "[FR] Industry Types",
+      "api_token": "[FR] Api Token"
+    },
+    "geo_settings": {
+      "label": "[FR] Geo Settings",
+      "regions": "[FR] Regions",
+      "areas": "[FR] Areas",
+      "tires": "[FR] Tires",
+      "zones": "[FR] Zones",
+      "vat_master": "[FR] Vat Master",
+      "industry_types": "[FR] Industry Types",
+      "api_token": "[FR] Api Token"
+    },
+    "logs_and_expires": {
+      "label": "[FR] Logs & Expires",
+      "logs": "[FR] Logs",
+      "expires": "[FR] Expires"
+    },
+    "general": {
+      "label": "[FR] General",
+      "company_info": "[FR] Company Info",
+      "accounts": "[FR] Accounts",
+      "partner": "[FR] Partner",
+      "asset": "[FR] Asset"
+    },
+    "sales_and_operations": {
+      "label": "[FR] Sales And Operations",
+      "active_clients_map": "[FR] Active Clients Map",
+      "potential_client": "[FR] Potential Client",
+      "client_scrapper": "[FR] Client Scrapper"
+    },
+    "client_home": {
+      "label": "[FR] Client Home",
+      "dashboard": "[FR] Dashboard",
+      "orders": "[FR] Orders",
+      "sales_report": "[FR] Sales Report",
+      "transactions": "[FR] Transactions",
+      "config_access": "[FR] Config Access",
+      "order_report": "[FR] Order Reportgu"
+    },
+    "third_party_home": {
+      "label": "[FR] Home",
+      "third_party_home": "[FR] Third Party Home"
+    }
+  }
+}

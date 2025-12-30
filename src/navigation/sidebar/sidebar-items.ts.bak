@@ -1,0 +1,745 @@
+/* eslint-disable */
+
+import {
+  Banknote,
+  ChartBar,
+  LayoutDashboard,
+  type LucideIcon,
+} from "lucide-react";
+
+export interface NavSubItem {
+  title: string;
+  url: string;
+  icon?: LucideIcon;
+  comingSoon?: boolean;
+  newTab?: boolean;
+  isNew?: boolean;
+  permission?: string;
+}
+
+export interface NavMainItem {
+  title: string;
+  url: string;
+  icon?: LucideIcon;
+  subItems?: NavSubItem[];
+  comingSoon?: boolean;
+  newTab?: boolean;
+  isNew?: boolean;
+  permission?: string;
+}
+
+export interface NavGroup {
+  id: number;
+  label?: string;
+  items: NavMainItem[];
+}
+
+export const sidebarItems: NavGroup[] = [
+  {
+    id: 1,
+    label: "Home",
+    items: [
+      {
+        title: "Home",
+        url: "/dashboard/home",
+        icon: LayoutDashboard,
+        permission: "view-dashboard",
+      },
+    ],
+  },
+  {
+    id: 2,
+    label: "Dashboards",
+    items: [
+      {
+        title: "Dashboard",
+        url: "/dashboard/default",
+        icon: LayoutDashboard,
+        permission: "view-dashboard",
+      },
+      {
+        title: "Overall",
+        url: "/dashboard/overall",
+        icon: ChartBar,
+        permission: "view-dashboard-overall",
+      },
+      {
+        title: "Clients",
+        url: "/dashboard/clients",
+        icon: Banknote,
+        permission: "view-dashboard-client",
+      },
+      {
+        title: "Management",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-dashboard-management",
+      },
+      {
+        title: "Operational Performance",
+        url: "/dashboard/operational-performance",
+        icon: Banknote,
+        permission: "view-dashboard-operational-performance",
+      },
+      {
+        title: "Sales",
+        url: "/dashboard/sales",
+        icon: Banknote,
+        permission: "view-dashboard-sales",
+      },
+    ],
+  },
+  {
+    id: 3,
+    label: "Orders",
+    items: [
+      {
+        title: "Dispatcher",
+        url: "/dashboard/orders",
+        icon: LayoutDashboard,
+        permission: "view-dispatcher",
+      },
+      {
+        title: "Dispatcher Live",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-live-dispatcher",
+      },
+      {
+        title: "Scheduled Orders",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-scheduled-orders",
+      },
+      {
+        title: "Live Stream Map",
+        url: "/dashboard/management",
+        icon: Banknote,
+        permission: "map-dispatcher",
+      },
+      {
+        title: "Live Stream Map Beta",
+        url: "/dashboard/operational-performance",
+        icon: Banknote,
+        permission: "map-dispatcher-beta",
+      },
+      {
+        title: "Consolidated Orders",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-consolidated-orders",
+      },
+    ],
+  },
+  {
+    id: 4,
+    label: "Complaints",
+    items: [
+      {
+        title: "Tickets",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-tickets",
+      },
+      {
+        title: "Pending Orders",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-pending-orders",
+      },
+      {
+        title: "Ticket Report",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "report-tickets",
+      },
+    ],
+  },
+  {
+    id: 5,
+    label: "Captain Reports",
+    items: [
+      {
+        title: "Delivery Report",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-delivery-report",
+      },
+      {
+        title: "Commission Report",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-commissions",
+      },
+      {
+        title: "Commission Payments",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-commissions",
+      },
+      {
+        title: "KPI Report",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-captain-performance",
+      },
+      {
+        title: "Consolidated Commission Report",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-commissions",
+      },
+      {
+        title: "Active Low Performance Report",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-captain-performance",
+      },
+      {
+        title: "Shift Report",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-shift-report",
+      },
+    ],
+  },
+  {
+    id: 6,
+    label: "Client Reports",
+    items: [
+      {
+        title: "Sales Report",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-salesreport",
+      },
+      {
+        title: "Cancellation Report",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-cancellation-report",
+      },
+      {
+        title: "Client Sales Report",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-client-salesreport",
+      },
+      {
+        title: "Client Order",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-client-order",
+      },
+      {
+        title: "Client Transactions",
+        url: "/unauthorized",
+        icon: Banknote,
+        permission: "view-client-transaction",
+      },
+    ],
+  },
+  {
+    id: 7,
+    label: "3pl Reports",
+    items: [
+      {
+        title: "COM Report",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-3pl-reports",
+      },
+      {
+        title: "Captain Com Report",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-3pl-reports",
+      },
+    ],
+  },
+  {
+    id: 8,
+    label: "KPI Reports",
+    items: [
+      {
+        title: "Captain Performance",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-captain-performance",
+      },
+      {
+        title: "Captain Working Days",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.captain.working-days",
+      },
+      {
+        title: "Order TimeLine",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-order-time-line",
+      },
+      {
+        title: "High Level",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.high_level",
+      },
+      {
+        title: "Driver Level",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-report.driver_level",
+      },
+      {
+        title: "Vendor Level",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.vendor_level",
+      },
+      {
+        title: "Geographical Level",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-report.geographical_level",
+      },
+      {
+        title: "Region Based",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.region_based_report",
+      },
+      {
+        title: "Area Based",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.area_based_report",
+      },
+      {
+        title: "Zone Based",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.zone_based_report",
+      },
+      {
+        title: "Zone Detailed",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-report.zone_detailed_report",
+      },
+    ],
+  },
+  {
+    id: 9,
+    label: "Reports",
+    items: [
+      {
+        title: "Expense Report",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-expensereport",
+      },
+      {
+        title: "Captain Transactions",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-captain-transaction",
+      },
+    ],
+  },
+  {
+    id: 10,
+    label: "Vehicle",
+    items: [
+      {
+        title: "All Vehicle",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-vehicles",
+      },
+      {
+        title: "Rented Vehicles",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "manage-rent",
+      },
+    ],
+  },
+  {
+    id: 11,
+    label: "Employees",
+    items: [
+      {
+        title: "Captains",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-captains",
+      },
+      {
+        title: "Employees",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-admin",
+      },
+      {
+        title: "Reg Requests",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-captain-requests",
+      },
+      {
+        title: "Operations",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "view-operations",
+      },
+    ],
+  },
+  {
+    id: 12,
+    label: "Operation Reports",
+    items: [
+      {
+        title: "Daily Shift Reports",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "operations-daily-report",
+      },
+      {
+        title: "TimeSheet Reports",
+        url: "/unauthorized",
+        icon: ChartBar,
+        permission: "operations-timesheet-report",
+      },
+    ],
+  },
+  {
+    id: 13,
+    label: "CRM",
+    items: [
+      {
+        title: "Notifications",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-sendable",
+      },
+    ],
+  },
+  {
+    id: 14,
+    label: "Sales Management",
+    items: [
+      {
+        title: "Roles",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-roles",
+      },
+      {
+        title: "Team Management",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-teams",
+      },
+      {
+        title: "Sales Leads",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-leads",
+      },
+      {
+        title: "Clients",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-clients",
+      },
+    ],
+  },
+  {
+    id: 15,
+    label: "Map Views",
+    items: [
+      {
+        title: "Store View",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "map-view-shops",
+      },
+      {
+        title: "Order View",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "map-view-order",
+      },
+      {
+        title: "Store Order View",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+      },
+    ],
+  },
+  {
+    id: 16,
+    label: "Delivery Rules",
+    items: [
+      {
+        title: "Price Rule Master",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-delivery-charge-rule",
+      },
+      {
+        title: "Cancellation Charge",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-delivery-charge-rule",
+      },
+      {
+        title: "Return To Client Charge",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-delivery-charge-rule",
+      },
+    ],
+  },
+  {
+    id: 17,
+    label: "System Settings",
+    items: [
+      {
+        title: "Shift Rules",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-shift-rules",
+      },
+      {
+        title: "Dispatch Rules",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-dispatch-rule",
+      },
+      {
+        title: "Commission Rules",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-commission-rule",
+      },
+      {
+        title: "Role and Permission",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-role-permissions",
+      },
+      {
+        title: "Vat Master",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-vat",
+      },
+      {
+        title: "Industry Types",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-industries",
+      },
+      {
+        title: "Api Token",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-api-tokens",
+      },
+    ],
+  },
+  {
+    id: 18,
+    label: "Geo Settings",
+    items: [
+      {
+        title: "Regions",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-regions",
+      },
+      {
+        title: "Areas",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-quadrants",
+      },
+      {
+        title: "Tires",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-tire",
+      },
+      {
+        title: "Zones",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-zones",
+      },
+      {
+        title: "Vat Master",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-vat",
+      },
+      {
+        title: "Industry Types",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-industries",
+      },
+      {
+        title: "Api Token",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-api-tokens",
+      },
+    ],
+  },
+  {
+    id: 19,
+    label: "Logs & Expires",
+    items: [
+      {
+        title: "Logs",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-logs",
+      },
+      {
+        title: "Expires",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-expires",
+      },
+    ],
+  },
+  {
+    id: 20,
+    label: "General",
+    items: [
+      {
+        title: "Company Info",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-company",
+      },
+      {
+        title: "Accounts",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "manage-accounts",
+      },
+      {
+        title: "Partner",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-partner",
+      },
+      {
+        title: "Asset",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "view-assets",
+      },
+    ],
+  },
+  {
+    id: 21,
+    label: "Sales And Operations",
+    items: [
+      {
+        title: "Active Clients Map",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "marketing-active-clients",
+      },
+      {
+        title: "Potential Client",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "marketing-potential-clients",
+      },
+      {
+        title: "Client Scrapper",
+        url: "/unauthorized",
+        icon: LayoutDashboard,
+        permission: "marketing-scrapper",
+      },
+    ],
+  },
+  // {
+  //   id: 3,
+  //   label: "Misc",
+  //   items: [
+  //     {
+  //       title: "Others",
+  //       url: "/dashboard/coming-soon",
+  //       icon: SquareArrowUpRight,
+  //       comingSoon: true,
+  //     },
+  //   ],
+  // },
+];
+
+export const ClientSidebarItems: NavGroup[] = [
+  {
+    id: 1,
+    label: "Client Home",
+    items: [
+      {
+        title: "Dashboard",
+        url: "/dashboard/home/client",
+        icon: LayoutDashboard,
+        // permission: "view-dashboard",
+      },
+      {
+        title: "Orders",
+        url: "/dashboard/orders",
+        icon: LayoutDashboard,
+        // permission: "view-dashboard",
+      },
+      {
+        title: "Sales Report",
+        url: "/dashboard/home/client",
+        icon: LayoutDashboard,
+        // permission: "view-dashboard",
+      },
+      {
+        title: "Transactions",
+        url: "/dashboard/home/client",
+        icon: LayoutDashboard,
+        // permission: "view-dashboard",
+      },
+      {
+        title: "Config Access",
+        url: "/dashboard/home/client",
+        icon: LayoutDashboard,
+        // permission: "view-dashboard",
+      },
+      {
+        title: "Order Reportgu",
+        url: "/dashboard/home/client",
+        icon: LayoutDashboard,
+        // permission: "view-dashboard",
+      },
+    ],
+  },
+];
+
+export const ThirdPartySidebarItems: NavGroup[] = [
+  {
+    id: 1,
+    label: "Home",
+    items: [
+      {
+        title: "Third PArty Home",
+        url: "/dashboard/home/3pl",
+        icon: LayoutDashboard,
+        permission: "view-dashboard",
+      },
+    ],
+  },
+];
